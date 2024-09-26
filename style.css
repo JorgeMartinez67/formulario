@@ -29,13 +29,22 @@ header h2 {
     margin: 0;
     font-size: 24px;
 }
-.container {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e9ecef;
+    padding: 40px 0;
+}
+
+.form-container {
     background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
 }
 
 h2 {
@@ -47,9 +56,6 @@ h2 {
 .formulario {
     display: flex;
     flex-direction: column;
-}
-section {
-    padding: 2em;
 }
 
 label {
@@ -73,8 +79,18 @@ input:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-button {
-    padding: 12px;
+textarea {
+    resize: vertical; /* Para permitir el ajuste del tamaño vertical del textarea */
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 12px 20px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -82,14 +98,16 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 48%; 
 }
 
-button:hover {
+input[type="submit"]:hover, input[type="reset"]:hover {
     background-color: #0056b3;
 }
 
+/* Estilo responsive */
 @media (max-width: 500px) {
-    .container {
+    .form-container {
         padding: 15px;
     }
 
@@ -101,8 +119,7 @@ button:hover {
         font-size: 14px;
     }
 
-    button {
+    input[type="submit"], input[type="reset"] {
         font-size: 14px;
     }
 }
-    
