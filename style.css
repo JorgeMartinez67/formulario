@@ -50,15 +50,13 @@ nav ul li a {
 nav ul li a:hover {
     color: #ddd;
 }
-
-/* Sección del formulario */
 .form-section {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alineamos el formulario al principio para evitar solapamientos */
-    min-height: 100vh; /* Hace que la sección ocupe toda la altura de la ventana */
+    align-items: flex-start; 
+    min-height: 150vh; 
     background-color: #e9ecef;
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 .form-container {
